@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-bool istGerade(int num) {
+bool isEven(int num) {
   if ( num % 2 != 0 ) {
     return false;
   }
   return true;
 }
 
-bool istPositiv(int num) {
+bool isPositive(int num) {
   if ( num > 0) {
     return true;
   }
@@ -20,13 +20,13 @@ int main() {
   int input;
   cin >> input;
 
-  if ( istGerade(input) ) {
+  if ( isEven(input) ) {
     cout << "Deine Zahl ist Gerade." << endl;
   } else {
     cout <<"Deine Zahl ist Ungerade." << endl;
   }
 
-  if ( istPositiv(input) ) {
+  if ( isPositive(input) ) {
     cout << "Deine Zahl ist Positiv." << endl;
   } else {
     cout << "Deine Zahl ist Negativ." << endl;
